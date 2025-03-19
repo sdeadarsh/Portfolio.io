@@ -355,7 +355,6 @@ section {
 --------------------------------------------------------------*/
 .about {
   position: relative;  /* Add this */
-  overflow: visible;   /* Add this */
   z-index: 1;          /* Add this */
 }
 
