@@ -322,6 +322,7 @@ section {
 }
 
 .section-title {
+  margin-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -352,6 +353,12 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  position: relative;  /* Add this */
+  overflow: visible;   /* Add this */
+  z-index: 1;          /* Add this */
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -427,9 +434,25 @@ section {
   color: #1f5297;
 }
 
+.character-container {
+  position: relative;
+  top: 130px;
+  right: 25px;
+  height: 100px; /* Adjust based on how much of the character you want to show */
+  margin-top: -50px; /* Pull it up to overlap with the About section */
+  margin-bottom: -50px; /* Pull Skills section up to overlap with it */
+  z-index: 9999; /* Very high to ensure it's above everything */
+  pointer-events: none; /* So it doesn't interfere with clicking */
+}
+
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.skills {
+  position: relative;  /* Add this */
+  z-index: 2;          /* Add this - higher than about */
+}
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -461,6 +484,71 @@ section {
   transition: .9s;
   background-color: #149ddd;
 }
+
+.skill-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+.skills-section-animation {
+  position: relative; /* Ensures proper absolute positioning */
+  z-index: 100;        /* Increase this */
+  overflow: visible; 
+  height: 0
+}
+
+.skill-line {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0%;
+  height: 5px;
+  animation: expandLine 2s ease-in-out forwards;
+}
+
+.skill-bench {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  width: 120px;
+  height: 10px;
+  background-color: #333; /* Dark bench */
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.skill-character {
+  position: absolute;
+  top: -185px;
+  right: 30px; /* Adjust to fit the design */
+  width: 200px; /* Match the inline style */
+  height: 200px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: characterBounce 2s infinite alternate;
+}
+
+/* Animation for expanding the blue line */
+@keyframes expandLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animation for the character bouncing */
+@keyframes characterBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-12px);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Resume
