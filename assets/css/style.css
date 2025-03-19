@@ -516,6 +516,7 @@ section {
   background-color: #333; /* Dark bench */
   border-radius: 5px;
   transform: translateX(-50%);
+  animation: moveBench 5s linear infinite alternate;
 }
 
 .skill-character {
@@ -527,6 +528,15 @@ section {
   z-index: 9999;
   pointer-events: none;
   animation: characterBounce 2s infinite alternate;
+}
+
+@keyframes moveBench {
+  0% {
+    left: calc(100% - 180px); /* Start at the left */
+  }
+  100% {
+    left: 90% /* Move fully to the right */
+  }
 }
 
 /* Animation for expanding the blue line */
