@@ -117,27 +117,33 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 #header .profile .social-links a {
-  font-size: 18px; /* Adjust icon size */
-  display: inline-flex; /* Use flex for proper alignment */
+  font-size: 18px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background: #212431;
   color: #fff;
-  line-height: 1;
   padding: 8px;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;  /* Slightly increased for better balance */
+  height: 40px;
   transition: 0.3s;
 }
 
 #header .profile .social-links a i,
 #header .profile .social-links a svg {
-  font-size: 18px; /* Ensure all icons are the same size */
-  width: 18px; /* Ensure SVG is same size as font-based icons */
-  height: 18px;
+  font-size: 22px; /* Increase size for consistency */
+  width: 22px;
+  height: 22px;
+}
+
+/* Adjust GitHub icon specifically */
+#header .profile .social-links .github i {
+  font-size: 24px; /* Slightly bigger for better balance */
+  width: 24px;
+  height: 24px;
 }
 
 #header .profile .social-links a:hover {
