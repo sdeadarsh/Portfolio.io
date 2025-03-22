@@ -190,4 +190,65 @@
     aos_init();
   });
 
+    // Porfolio isotope and filter
+    $(window).on('load', function() {
+      var certificateIsotope = $('.certificate-container').isotope({
+        itemSelector: '.certificate-item',
+        layoutMode: 'fitRows'
+      });
+  
+      $('#certificate-flters li').on('click', function() {
+        $("#certificate-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+  
+        certificateIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+        aos_init();
+      });
+  
+      // Initiate venobox (lightbox feature used in portofilo)
+      $(document).ready(function() {
+        $('.venobox').venobox();
+      });
+    });
+  
+    // Testimonials carousel (uses the Owl Carousel library)
+    $(".testimonials-carousel").owlCarousel({
+      autoplay: true,
+      dots: true,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        900: {
+          items: 3
+        }
+      }
+    });
+  
+    // certificate details carousel
+    $(".certificate-details-carousel").owlCarousel({
+      autoplay: true,
+      dots: true,
+      loop: true,
+      items: 1
+    });
+  
+    // Init AOS
+    function aos_init() {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out-back",
+        once: true
+      });
+    }
+    $(window).on('load', function() {
+      aos_init();
+    });
+
 })(jQuery);
