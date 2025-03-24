@@ -10,20 +10,22 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  /* color: #E5E5E5; */
+  background-color: #DADFA1; /* Light Olive */
+  color: #2C2C2C; /* Dark Gray for text */
 }
 
 a {
-  color: #149ddd;
+  color: #C45C08;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #CC2313;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif; color: #5D1119;
 }
 
 /*--------------------------------------------------------------
@@ -37,8 +39,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
-  color: #fff;
+  background-color: #C45C08; /* Deep Orange */
+  color: #DADFA1; /* White text for contrast */
+  /* background: #D4AF37;
+  color: #fcecdff; */
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
@@ -51,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  color: #fff;
-  background: #2eafec;
+  color: #DADFA1;
+  background: #CC2313;
   transition: background 0.2s ease-in-out;
 }
 
@@ -91,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: #DADFA1;
   text-decoration: none;
 }
 
@@ -99,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   display: inline-block;
   background: #212431;
-  color: #fff;
+  color: #fcecdf;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -112,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .profile .social-links a:hover {
   background: #149ddd;
-  color: #fff;
+  color: #fcecdf;
   text-decoration: none;
 } */
 
@@ -121,8 +125,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: #212431;
-  color: #fff;
+  background: #C45C08;
+  color: #DADFA1;
   padding: 8px;
   margin-right: 4px;
   border-radius: 50%;
@@ -147,8 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: #CC2313;
+  color: #DADFA1;
   text-decoration: none;
 }
 
@@ -188,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #E2AD3A;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -198,16 +202,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #E2AD3A;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #fff;
+  color: #C45C08;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #C45C08;
 }
 
 /* Mobile Navigation */
@@ -227,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #C45C08;
 }
 
 .mobile-nav-active {
@@ -239,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #CC2313;
 }
 
 /*--------------------------------------------------------------
@@ -274,21 +278,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #5D1119;
 }
 
 #hero p {
-  color: #fff;
+  color: #C45C08;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: #DADFA1;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #CC2313;
 }
 
 @media (min-width: 1024px) {
@@ -318,7 +322,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #f0f3d1;
 }
 
 .section-title {
@@ -332,7 +336,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  /* color: #173b6c; */
+  color: #D4AF37; 
 }
 
 .section-title h2::after {
@@ -341,7 +346,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #CC2313;
   bottom: 0;
   left: 0;
 }
@@ -356,12 +361,13 @@ section {
 .about {
   position: relative;  /* Add this */
   z-index: 1;          /* Add this */
+  background: #f0e6e0;
 }
 
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #E2AD3A;
 }
 
 .about .content ul {
@@ -376,7 +382,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #149ddd;
+  color: #CC2313;
 }
 
 .about .content p:last-child {
@@ -474,14 +480,14 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: #E2AD3A;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: #C45C08;
 }
 
 .skill-header {
@@ -510,7 +516,7 @@ section {
   position: absolute;
   top: -5px;
   right: 15px;
-  width: 120px;
+  width: 150px;
   height: 10px;
   background-color: #333; /* Dark bench */
   border-radius: 5px;
@@ -520,10 +526,10 @@ section {
 
 .skill-character {
   position: absolute;
-  top: -185px;
+  top: -250px;
   right: 30px; /* Adjust to fit the design */
-  width: 200px; /* Match the inline style */
-  height: 200px;
+  width: 250px; /* Match the inline style */
+  height: 250px;
   z-index: 9999;
   pointer-events: none;
   animation: characterBounce 2s infinite alternate;
@@ -567,13 +573,14 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  /* color: #050d18; */
+  color: #D4AF37; 
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #E2AD3A;
   position: relative;
 }
 
@@ -589,7 +596,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #E2AD3A;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -616,8 +623,66 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: #C45C08;
+  border: 2px solid #CC2313;
+}
+
+.rs-character-container {
+  position: relative;
+  top: 250px;
+  right: 25px;
+  height: 100px; /* Adjust based on how much of the character you want to show */
+  margin-top: -50px; /* Pull it up to overlap with the About section */
+  margin-bottom: -50px; /* Pull Skills section up to overlap with it */
+  z-index: 9999; /* Very high to ensure it's above everything */
+  pointer-events: none; /* So it doesn't interfere with clicking */
+}
+
+.resume-section-animation {
+  position: relative; /* Ensures proper absolute positioning */
+  z-index: 100;        /* Increase this */
+  overflow: visible; 
+  height: 0
+}
+
+.resume-character {
+  position: absolute;
+  top: -250px;
+  right: 50px; /* Adjust to fit the design */
+  width: 230px; /* Match the inline style */
+  height: 230px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: characterBounce 2s infinite alternate;
+}
+
+@keyframes moveBench {
+  0% {
+    left: calc(100% - 180px); /* Start at the left */
+  }
+  100% {
+    left: 90% /* Move fully to the right */
+  }
+}
+
+/* Animation for expanding the blue line */
+@keyframes expandLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animation for the character bouncing */
+@keyframes characterBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-12px);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -632,7 +697,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #fcecdf;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -651,7 +716,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #C45C08;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -691,20 +756,20 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: #fcecdf;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: #C45C08;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #CC2313;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #E2AD3A;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -720,6 +785,64 @@ section {
   bottom: 0;
 }
 
+.portfolio-character-container {
+  position: relative;
+  top: 180px;
+  right: 25px;
+  height: 100px; /* Adjust based on how much of the character you want to show */
+  margin-top: -50px; /* Pull it up to overlap with the About section */
+  margin-bottom: -50px; /* Pull Skills section up to overlap with it */
+  z-index: 9999; /* Very high to ensure it's above everything */
+  pointer-events: none; /* So it doesn't interfere with clicking */
+}
+
+.portfolio-section-animation {
+  position: relative; /* Ensures proper absolute positioning */
+  z-index: 100;        /* Increase this */
+  overflow: visible; 
+  height: 0
+}
+
+.portfolio-character {
+  position: absolute;
+  top: -250px;
+  right: 30px; /* Adjust to fit the design */
+  width: 260px; /* Match the inline style */
+  height: 260px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: characterBounce 2s infinite alternate;
+}
+
+@keyframes moveBench {
+  0% {
+    left: calc(100% - 180px); /* Start at the left */
+  }
+  100% {
+    left: 90% /* Move fully to the right */
+  }
+}
+
+/* Animation for expanding the blue line */
+@keyframes expandLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animation for the character bouncing */
+@keyframes characterBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-12px);
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Certifications
@@ -733,7 +856,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #fcecdf;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -752,7 +875,7 @@ section {
 }
 
 .certificate #certificate-flters li:hover, .certificate #certificate-flters li.filter-active {
-  color: #149ddd;
+  color: #C45C08;
 }
 
 .certificate #certificate-flters li:last-child {
@@ -792,20 +915,20 @@ section {
 }
 
 .certificate .certificate-wrap .certificate-links a {
-  color: #fff;
+  color: #fcecdf;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: #C45C08;
   transition: 0.3s;
   width: 50%;
 }
 
 .certificate .certificate-wrap .certificate-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #CC2313;
 }
 
 .certificate .certificate-wrap .certificate-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #E2AD3A;
 }
 
 .certificate .certificate-wrap:hover::before {
@@ -821,6 +944,64 @@ section {
   bottom: 0;
 }
 
+
+.certificate-character-container {
+  position: relative;
+  top: 250px;
+  right: 25px;
+  height: 100px; /* Adjust based on how much of the character you want to show */
+  margin-top: -50px; /* Pull it up to overlap with the About section */
+  margin-bottom: -50px; /* Pull Skills section up to overlap with it */
+  z-index: 9999; /* Very high to ensure it's above everything */
+  pointer-events: none; /* So it doesn't interfere with clicking */
+}
+
+.certificate-section-animation {
+  position: relative; /* Ensures proper absolute positioning */
+  z-index: 100;        /* Increase this */
+  overflow: visible; 
+  height: 0
+}
+
+.certificate-character {
+  position: absolute;
+  top: -250px;
+  right: 30px; /* Adjust to fit the design */
+  width: 260px; /* Match the inline style */
+  height: 260px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: characterBounce 2s infinite alternate;
+}
+
+@keyframes moveBench {
+  0% {
+    left: calc(100% - 180px); /* Start at the left */
+  }
+  100% {
+    left: 90% /* Move fully to the right */
+  }
+}
+
+/* Animation for expanding the blue line */
+@keyframes expandLine {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animation for the character bouncing */
+@keyframes characterBounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-12px);
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -842,12 +1023,12 @@ section {
 }
 
 .services .icon i {
-  color: #fff;
+  color: #fcecdf;
   font-size: 24px;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #fcecdf;
 }
 
 .services .icon-box:hover .icon i {
@@ -925,7 +1106,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  background: #fcecdf;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -936,7 +1117,7 @@ section {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #fff;
+  border-top: 20px solid #fcecdf;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -977,18 +1158,18 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #fcecdf;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #C45C08;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #fcecdf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1008,7 +1189,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #E2AD3A;
 }
 
 .contact .info .email p {
@@ -1023,7 +1204,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: #fcecdf;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -1035,19 +1216,19 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: #CC2313;
+  color: #fcecdf;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+  background: #CC2313;
+  color: #fcecdf;
 }
 
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #fcecdf;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1065,7 +1246,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #fcecdf;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1078,7 +1259,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #fcecdf;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1087,7 +1268,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #fcecdf;
   text-align: center;
   padding: 15px;
 }
@@ -1120,16 +1301,19 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background-color: #C45C08; /* Deep Orange */
+  color: #fcecdf; /* White text for contrast */
+  /* background: #149ddd; */
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  /* color: #fcecdf; */
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
+  background-color: #CC2313;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1234,7 +1418,7 @@ section {
   position: absolute;
   right: 0;
   bottom: -70px;
-  background: #fff;
+  background: #fcecdf;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
