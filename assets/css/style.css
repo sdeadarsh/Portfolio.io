@@ -651,8 +651,8 @@ section {
   position: absolute;
   top: -280px;
   right: 50px; /* Adjust to fit the design */
-  width: 230px; /* Match the inline style */
-  height: 230px;
+  width: 200px; /* Match the inline style */
+  height: 200px;
   z-index: 9999;
   pointer-events: none;
   animation: characterBounce 2s infinite alternate;
