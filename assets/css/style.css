@@ -687,6 +687,13 @@ section {
   }
 }
 
+.rs-section-title {
+  display: flex;
+  align-items: center;  /* Align items in a row */
+  gap: 15px;  /* Space between heading and button */
+  padding-left: 20px;
+}
+
 .rs-section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -696,6 +703,8 @@ section {
   position: relative;
   /* color: #173b6c; */
   color: #D4AF37; 
+  margin: 0;
+  align-items: center; 
 }
 
 .rs-section-title h2::after {
@@ -705,8 +714,25 @@ section {
   width: 50px;
   height: 3px;
   background: #CC2313;
-  bottom: 0;
+  bottom: -5px;
   left: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #C45C08;
+  color: #D4AF37;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #CC2313;
+  color: #D4AF37;
 }
 
 /*--------------------------------------------------------------
