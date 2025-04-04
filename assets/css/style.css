@@ -690,7 +690,7 @@ section {
 .rs-section-title {
   display: flex;
   align-items: center;  /* Align items in a row */
-  gap: 15px;  /* Space between heading and button */
+  gap: 25px;  /* Space between heading and button */
   padding-left: 20px;
 }
 
@@ -723,7 +723,7 @@ section {
   padding: 10px 20px;
   background: #C45C08;
   color: #D4AF37;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 7px;
