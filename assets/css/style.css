@@ -649,7 +649,7 @@ section {
 
 .resume-character {
   position: absolute;
-  top: -250px;
+  top: -280px;
   right: 50px; /* Adjust to fit the design */
   width: 230px; /* Match the inline style */
   height: 230px;
