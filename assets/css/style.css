@@ -573,6 +573,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
   /* color: #050d18; */
   color: #D4AF37; 
 }
@@ -582,6 +583,7 @@ section {
   margin-top: -2px;
   border-left: 2px solid #E2AD3A;
   position: relative;
+  left: 20px;
 }
 
 .resume .resume-item h4 {
@@ -865,6 +867,27 @@ section {
   }
 }
 
+.pf-section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  /* color: #173b6c; */
+  color: #D4AF37; 
+}
+
+.pf-section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #CC2313;
+  bottom: 0;
+  left: 20px;
+}
 
 /*--------------------------------------------------------------
 # Certifications
@@ -1023,6 +1046,28 @@ section {
   to {
       transform: translateY(-12px);
   }
+}
+
+.cf-section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  /* color: #173b6c; */
+  color: #D4AF37; 
+}
+
+.cf-section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #CC2313;
+  bottom: 0;
+  left: 20px;
 }
 /*--------------------------------------------------------------
 # Services
